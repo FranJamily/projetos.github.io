@@ -1,0 +1,70 @@
+/* .frame-child: Definindo o estilo para um contêiner com posição absoluta, cor de fundo vermelha translúcida e dimensões específicas. */
+.frame-child {
+    position: absolute; /* A posição é definida como absoluta, ou seja, será posicionada em relação ao seu contêiner pai (o primeiro elemento com posição relativa). */
+    top: 8px; /* O elemento será posicionado 8 pixels abaixo da parte superior do seu contêiner pai. */
+    left: 4px; /* O elemento será posicionado 133 pixels à direita da borda esquerda do seu contêiner pai. */
+    background-color: rgba(244, 75, 75, 0.82); /* Cor de fundo definida como um tom de vermelho (#F44B4B) com 82% de opacidade (0.82). */
+    width: 330px; /* Largura do elemento é definida como 330 pixels. */
+    height: 425px; /* Altura do elemento é definida como 425 pixels. */
+}
+
+/* .frame-item: Definindo o estilo de um item dentro do .frame-child, com sombra e bordas arredondadas. */
+.frame-item {
+    position: absolute; /* O item também tem posição absoluta, em relação ao seu contêiner pai. */
+    top: 38px; /* O item será posicionado 38 pixels abaixo da parte superior do seu contêiner pai. */
+    left: 50px; /* O item será posicionado 182 pixels à direita da borda esquerda do seu contêiner pai. */
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* Adiciona uma sombra ao redor do elemento, com deslocamento de 4px para baixo e opacidade de 25%. */
+    border-radius: 15px; /* Define bordas arredondadas com raio de 15px. */
+    background-color: #f35659; /* Cor de fundo definida como um tom de vermelho (#F35659). */
+    width: 233px; /* Largura do item é definida como 233 pixels. */
+    height: 237px; /* Altura do item é definida como 237 pixels. */
+}
+
+/* .meu-amor-quero: Estilo para um contêiner com alinhamento flexível, centrando o conteúdo dentro de uma área de 233x75px. */
+.meu-amor-quero {
+    position: absolute; /* O contêiner tem posição absoluta em relação ao seu contêiner pai. */
+    top: 305px; /* O contêiner será posicionado 305 pixels abaixo da parte superior do seu contêiner pai. */
+    left: 50px; /* O contêiner será posicionado 182 pixels à direita da borda esquerda do seu contêiner pai. */
+    display: flex; /* O contêiner usa o modelo de layout flexível para organizar seus itens (filhos). */
+    align-items: center; /* Alinha os itens (filhos) verticalmente ao centro do contêiner. */
+    justify-content: center; /* Alinha os itens (filhos) horizontalmente ao centro do contêiner. */
+    width: 233px; /* Largura do contêiner é definida como 233 pixels. */
+    height: 75px; /* Altura do contêiner é definida como 75 pixels. */
+}
+
+/* .eu-te-amo: Estilo para um texto, com alinhamento flexível e fonte em negrito. */
+.eu-te-amo {
+    position: absolute; /* O elemento de texto tem posição absoluta em relação ao seu contêiner pai. */
+    top: 235px; /* O texto será posicionado 235 pixels abaixo da parte superior do seu contêiner pai. */
+    left: 77px; /* O texto será posicionado 209 pixels à direita da borda esquerda do seu contêiner pai. */
+    font-size: 24px; /* O tamanho da fonte do texto é definido como 24 pixels. */
+    display: flex; /* O texto é envolvido em um contêiner flexível. */
+    font-weight: 700; /* O texto tem peso de fonte em negrito (700). */
+    align-items: center; /* Alinha o texto verticalmente ao centro do contêiner. */
+    justify-content: center; /* Alinha o texto horizontalmente ao centro do contêiner. */
+    width: 181px; /* Largura do contêiner de texto é definida como 181 pixels. */
+    height: 27px; /* Altura do contêiner de texto é definida como 27 pixels. */
+}
+
+/* .prints-1-icon: Estilo para uma imagem com posicionamento absoluto e ajuste da imagem dentro do contêiner. */
+.prints-1-icon {
+    position: absolute; /* A imagem tem posição absoluta em relação ao seu contêiner pai. */
+    top: 50px; /* A imagem será posicionada 50 pixels abaixo da parte superior do seu contêiner pai. */
+    left: 62px; /* A imagem será posicionada 195 pixels à direita da borda esquerda do seu contêiner pai. */
+    width: 208px; /* Largura da imagem é definida como 208 pixels. */
+    height: 170px; /* Altura da imagem é definida como 170 pixels. */
+    object-fit: cover; /* A imagem será ajustada para cobrir todo o contêiner, mantendo sua proporção, mas pode ser cortada se necessário. */
+}
+
+/* .rectangle-parent: Estilo para o contêiner principal, com largura total da tela e fundo branco. */
+.rectangle-parent {
+    width: 100%; /* A largura do contêiner é definida como 100% da largura do contêiner pai (ou da tela, se for o elemento raiz). */
+    position: relative; /* O contêiner tem posição relativa, o que significa que seus elementos filhos com posição absoluta serão posicionados em relação a ele. */
+    background-color: #fff; /* O fundo do contêiner é branco. */
+    height: 440px; /* A altura do contêiner é definida como 440 pixels. */
+    overflow: hidden; /* Qualquer conteúdo que ultrapasse a altura ou largura do contêiner será ocultado. */
+    text-align: center; /* Alinha o texto dentro do contêiner horizontalmente ao centro. */
+    font-size: 14px; /* Define o tamanho da fonte como 14 pixels. */
+    color: #111; /* A cor do texto é um tom escuro (#111). */
+    font-family: 'Inria Sans'; /* A fonte utilizada para o texto dentro do contêiner será "Inria Sans". */
+}
